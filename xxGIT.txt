@@ -1,0 +1,56 @@
+Steps to Commit New Changes
+Open Command Prompt:
+Navigate to your project directory if you are not already there:
+bash
+
+
+    cd C:\Users\adigi\OneDrive\Documents\code\browser-use-main\aScraper
+Check the Status of Your Repository:
+It's a good practice to check the status of your repository to see which files have been modified or are untracked:
+bash
+
+Copy Code
+    git status
+Add Your Changes:
+Add the modified files to the staging area. You can add all changes with:
+bash
+
+Copy Code
+    git add .
+If you want to add specific files, you can specify them individually:
+bash
+
+Copy Code
+    git add filename1 filename2
+Commit Your Changes:
+Commit the changes with a descriptive message:
+bash
+
+Copy Code
+    git commit -m "Describe the changes you made"
+Push Your Changes to GitHub:
+Finally, push your committed changes to the GitHub repository:
+bash
+
+Copy Code
+    git push origin master
+If your Git version uses main as the default branch, use:
+bash
+
+Copy Code
+git push origin main
+Example Workflow
+Here’s a quick example of what the commands might look like:
+
+bash
+
+Copy Code
+    cd C:\Users\adigi\OneDrive\Documents\code\browser-use-main\aScraper
+    git status
+    git add .
+    git commit -m "Updated the scraper to handle new website structure"
+git push origin master
+Additional Notes:
+Always make sure to write clear and descriptive commit messages to help you and others understand the changes made.
+If you have multiple changes and want to commit them separately, you can add and commit them one by one with different messages.
+If you encounter any issues during the push (e.g., if someone else has pushed changes to the repository since your last pull), you may need to pull the latest changes first using git pull origin master (or git pull origin main) before pushing your changes.
